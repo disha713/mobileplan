@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "bdce685f-2f9e-4466-93b6-d1928dcad659",
+		"name": "Mobile Plan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a New Mobile Plan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 5,\r\n        \"name\": \"jio\",\r\n        \"description\": \"shr\",\r\n        \"validity\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Mobileplan that already exist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"name\": \"airtel\",\r\n        \"description\": \"efgh\",\r\n        \"validity\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a specific Mobileplan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the mobileplans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a mobileplan that does not exist",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mp/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a mobileplan",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 3,\r\n        \"name\": \"Idea\",\r\n        \"description\": \"brst\",\r\n        \"validity\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a mobileplan that does not exist",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"name\": \"airtel\",\r\n        \"description\": \"hgd\",\r\n        \"validity\": 1\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/mp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a mobileplan that does not exist",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mp/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a plan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/mp/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mp",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
